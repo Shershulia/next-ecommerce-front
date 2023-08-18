@@ -48,7 +48,7 @@ const SearchPage = () => {
                         onChange={(ev)=>{setPhrase(ev.target.value)}} />
                 </InputWrapper>
                 {!isLoading && products.length===0 && phrase!=='' &&(
-                    <h2>No products found for query "{phrase}"</h2>
+                    <h2>No products found for query &quot;{phrase}&quot;</h2>
                 )}
                 {isLoading && <Spinner fullWidth={true}/>
                 }
